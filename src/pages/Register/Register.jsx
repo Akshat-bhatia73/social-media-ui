@@ -1,6 +1,7 @@
 import "./Register.scss";
 import Logo from "../../assets/Logo.svg";
 import LogoDark from "../../assets/LogoDark.svg";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -16,7 +17,8 @@ const Register = () => {
           <button>Create Account</button>
         </form>
         <p>
-          Already have an account? <span>Login Here</span>
+          Already have an account? 
+        <Link to='/login'><button>Login Here</button></Link>
         </p>
       </div>
     </div>

@@ -64,14 +64,18 @@
       p {
           font-size: 14px;
           font-weight: 500;
-          span {
+          button {
+              border: none;
+              background: transparent;
+              margin-left: 5px;
               color: #3da7ff;
+              text-decoration: none;
               cursor: pointer;
               &:hover {
                   color: #1792f7;
               }
           }
+        }
       }
-    }
   }
   

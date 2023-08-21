@@ -1,6 +1,7 @@
 import "./Login.scss";
 import Logo from "../../assets/Logo.svg";
 import LogoDark from "../../assets/LogoDark.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -14,7 +15,7 @@ const Login = () => {
           <button>Login</button>
         </form>
         <p>
-          Don't have an account? <span>Register Here</span>
+          Don't have an account?<Link to='/register'><button>Register Here</button></Link>
         </p>
       </div>
     </div>
