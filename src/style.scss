@@ -24,7 +24,22 @@ body {
   margin: 0;
   min-width: 280px;
   min-height: 100vh;
-  background-color: #FBFBFB;
+  background-color: #d3d3d388;
   color: #222222;
+
+  @keyframes pulse {
+    0% {
+      scale: 0.5;
+    }
+    50% {
+      scale: 1;
+    }
+    100% {
+      scale: 0.5;
+    }
+  }
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}

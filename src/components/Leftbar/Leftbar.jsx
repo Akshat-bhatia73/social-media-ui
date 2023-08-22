@@ -32,7 +32,7 @@ const Leftbar = () => {
           <div className="icon">
             <MdOutlineGroups size={25} />
           </div>
-          <span>Group</span>
+          <span>Groups</span>
         </div>
         <div className="item">
           <div className="icon">
