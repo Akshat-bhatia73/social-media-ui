@@ -1,9 +1,10 @@
+import { Stories } from "../../components"
 import "./Home.scss"
 
 const Home = () => {
   return(
     <div className="home">
-      <h4>Home</h4>
+      <Stories />
     </div>
   )
 }
