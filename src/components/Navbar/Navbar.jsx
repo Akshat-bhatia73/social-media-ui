@@ -4,12 +4,13 @@ import Messenger from "../../assets/Messenger.png"
 import "./Navbar.scss";
 import {
   MdGridView,
-  MdSearch,
   MdOutlineHome,
   MdOutlineNotifications,
   MdOutlineDarkMode,
   MdOutlinePerson,
 } from "react-icons/Md";
+import {  IoIosSearch } from "react-icons/io";
+
 
 const Navbar = () => {
 
@@ -20,7 +21,7 @@ const Navbar = () => {
         <div className="search-box">
           <input type="text" name="search" placeholder="Search Snapframe" />
           <div className="icon">
-            <MdSearch size={30} />
+            <IoIosSearch size={30} />
           </div>
         </div>
       </div>

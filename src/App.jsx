@@ -18,7 +18,7 @@ const App = () => {
         <Navbar />
         <div className="" style={{ display: "flex" }}>
           <Leftbar />
-          <div className="" style={{ flex: "6" }}>
+          <div className="" style={{ flex: '6', }}>
             <Outlet />
           </div>
           <Rightbar />
