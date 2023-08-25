@@ -1,0 +1,129 @@
+.post {
+  background: #fbfbfb;
+  padding: 30px 20px;
+  min-width: 80%;
+  max-width: 400px;
+  border-radius: 40px;
+  box-shadow: 0 2px 10px #22222240;
+
+  .container {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #222222;
+      cursor: pointer;
+      border-radius: 50%;
+      &:hover {
+        background-color: #22222210;
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      .userInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid #22222240;
+
+          outline: 2px solid #22222240;
+          outline-offset: 2px;
+          cursor: pointer;
+        }
+        .details {
+          display: flex;
+          flex-direction: column;
+          .name {
+            font-weight: 600;
+            transition: 0.2s all;
+            &:hover {
+              color: #3da7ff;
+            }
+          }
+          .date {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #22222295;
+          }
+        }
+      }
+    }
+    .content {
+      p {
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+      img {
+        margin-top: 10px;
+        background-color: #22222210;
+        border-radius: 20px;
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+      }
+    }
+    .interaction {
+      display: flex;
+      gap: 10px;
+      span {
+        font-weight: 700;
+        font-size: 0.85rem;
+      }
+      .like {
+        display: flex;
+        align-items: center;
+        .icon {
+          .liked {
+            scale: 1;
+            animation: like 0.5s ease;
+          }
+
+          @keyframes like {s
+            0% {
+              scale: 1;
+            }
+            50% {
+              scale: 1.2;
+            }
+            100% {
+              scale: 1;
+            }
+          }
+          &:hover {
+            background-color: #ff004050;
+          }
+        }
+      }
+      .comment {
+        display: flex;
+        align-items: center;
+        .icon {
+          &:hover {
+            background-color: #3da7ff50;
+          }
+        }
+      }
+      .share {
+        &:hover {
+          background-color: #01d10150;
+        }
+      }
+    }
+  }
+}
